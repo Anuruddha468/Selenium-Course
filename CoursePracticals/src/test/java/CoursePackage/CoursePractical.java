@@ -35,6 +35,7 @@ public class CoursePractical {
 
         //Verify landing page
         Assert.assertEquals(driver.findElement(By.cssSelector("span.title")).getText(),"Products");
+        Assert.assertEquals(driver.findElement(By.xpath("//span[@class=\"title\"]")).getText(),"Products");
 
         driver.quit();
 
